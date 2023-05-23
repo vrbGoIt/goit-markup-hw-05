@@ -32,12 +32,14 @@ ul {
 }
 
 body {
+    height: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: var(--text-color);
     background: var(--background-color);
 }
+
 img {
     display: block;
 }
@@ -46,6 +48,14 @@ img {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.contacts-block {
+    min-height: 1024px;
+}
+
+.contacts-header {
+    margin-top: 40px;
 }
 
 .header {
@@ -186,11 +196,11 @@ img {
 }
 
 .menu-item {
-    padding: 24px 0;
+    padding: 24px 0 0 0;
 }
 
 .menu-link:hover,
-.menu-link:focus{
+.menu-link:focus {
     color: var(--link-hover-color);
 }
 
@@ -200,6 +210,22 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--menu-color);
+}
+
+.current-page {
+    color: var(--link-hover-color);
+}
+
+.current-page::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    /* left: 0;
+        bottom: 0; */
+    display: block;
+    background-color: var(--link-hover-color);
+    border-radius: 2px;
+    margin-top: 24px;
 }
 
 .list-contacts {
