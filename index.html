@@ -79,7 +79,7 @@
                         Effective Solutions for Your Business
                     </h1>
                     <!-- <div class="button-conteiner"> -->
-                    <button class="button-header" type="button">
+                    <button class="button-header" type="button" data-modal-open>
                         Order Service
                     </button>
                     <!-- </div> -->
@@ -671,9 +671,9 @@
                 </div>
             </div>
         </footer>
-        <div class="backdrop">
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <div type="button" class="modal-close">
+                <div type="button" class="modal-close" data-modal-close>
                     <svg
                         class="modal-close-button"
                         aria-label="іконка закриття"
@@ -687,5 +687,6 @@
                 </div>
             </div>
         </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>

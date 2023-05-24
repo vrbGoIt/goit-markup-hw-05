@@ -470,8 +470,8 @@ img {
     transition: fill var(--transition-duration-and-function);
 }
 
-.customer-list_icon:hover,
-.customer-list_icon:focus {
+.link-customer:hover .customer-list_icon,
+.link-customer:focus .customer-list_icon {
     fill: var(--logo-accent-color);
 }
 
@@ -644,4 +644,10 @@ img {
 .modal-close-button {
     fill: var(--navy-blue);
     transition: fill var(--transition-duration-and-function);
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
